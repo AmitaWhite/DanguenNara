@@ -1,13 +1,23 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {FlatList, SafeAreaView, StyleSheet} from 'react-native';
 
-export default function Home() {
+import ItemCard from '../components/ItemCard.jsx';
+import ReactCardSlider from '../components/ReactSliderCard.jsx';
+
+import {dummyItems, sliderDummy} from '../dummyData.js';
+
+const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
+      <FlatList
+        data={dummyItems}
+        renderItem={({item}) => <ItemCard item={item} />}
+        keyExtractor={dummyItems.id}
+      />
+      <ReactCardSlider slides={sliderDummy} />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -19,3 +29,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
+
+export default Home;

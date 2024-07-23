@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>DanguenNara</string>
 	<key>CFBundleExecutable</key>
@@ -26,14 +24,11 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -48,5 +43,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>앱을 사용하는 동안 위치에 접근하려고 합니다.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>앱이 백그라운드에서도 위치에 접근하려고 합니다.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>앱이 위치에 접근하려고 합니다.</string>
 </dict>
 </plist>

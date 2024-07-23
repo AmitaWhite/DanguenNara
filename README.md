@@ -1,79 +1,23 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+- BrainStorming
 
-# Getting Started
+  - Home 화면은 우선 FlatList 로 등록된 물품들을 쭉 나열해놓자
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+  1. 하나의 컴포넌트 카드 - 메인 사진이 먼저 눈에 들어오고 -> 이 사진은 홈 화면에서 바로 넘겨 볼 수 있어야함 (인스타 처럼)
+  2. 동 단위 장소 표시 되어야 함 - 제목과, 가격이 보여야 함
+  3. 이 카드를 클릭 했을 때, 등록된 상세 게시글내용 및 채팅하기가 가능해야 한다.
 
-## Step 1: Start the Metro Server
+- TODO
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+[v] 프로젝트 초기 세팅 - Home , Chat , Profile Tab Navigation
 
-To start Metro, run the following command from the _root_ of your React Native project:
+[v] apple map Compent 사용
 
-```bash
-# using npm
-npm start
+[] Home 화면에 사용할 데이터 리스트
 
-# OR using Yarn
-yarn start
-```
+[] Chat 화면 구현
 
-## Step 2: Start your Application
+[] Profile 설정
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- 어려웠던 점
+  1. ScrollView 를 상대 넓이로 조절해, 스와이프 제스처를 자연스럽게 보이게 하는 게 힘들었다.
+     - 일단 Dimension.get('window')를 통해 기기 자체 window를 절대 값으로 구해 계산 해 봤는데, 섬세하게 조절하려고 하니 쉽지 않았음
