@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 - BrainStorming
 
   - Home 화면은 우선 FlatList 로 등록된 물품들을 쭉 나열해놓자
