@@ -13,8 +13,23 @@
 [v] apple map Compent 사용
 
 [] Home 화면에 사용할 데이터 리스트
+[v] dummayData.js 로 관리
+[v] SliderView 컴포넌트 생성 -> Daily Recommendation 목록
+1.[] Recommend -> nomal 이 Vertical Scroll로Sticky 하게 진입하는 UI
+[] Detail Page 생성 -> Recommend 와 일반 게시글에서 이동될 상세 페이지
+[] (+) 게시물 등록 toast 버튼 -> 게시물 등록하는 page
+[] SearchBar 생성
+1.[] 사진 ScrollView
+2.[] 게시내용
+3.[] 가격
+4.[] 채팅기능
+5.[] 희망 거래 장소 (MapView)
+6.[] 이외 보여야 할 것 -> 추가 정리 후 기록
+[] Home Page View 정리
 
 [] Chat 화면 구현
+[] 상세 페이지에서 이어져야함  
+ []
 
 [] Profile 설정
 
